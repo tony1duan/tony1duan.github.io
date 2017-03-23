@@ -109,6 +109,13 @@ a {
 .navmenu a {
     font-size:24px;
 }
+.navmenu > li {
+    display: inline-block;
+    min-width:155px;
+}
+#linebreak-1 {
+    display: none;
+}
 .social-handle a, .social-handle-mobile a {
     font-size:18px;
     line-height: 36px;
@@ -228,6 +235,9 @@ footer .right-half {
         align-items: flex-end;
         justify-content: flex-start;
     }
+    #linebreak-1 {
+        display: inline;
+    }
     .social-handle {
         display: block;
         text-align: right;
@@ -288,6 +298,10 @@ footer .right-half {
     .navmenu a {
         font-size:32px;
     }
+    .navmenu > li {
+    display: inline-block;
+    min-width:188px;
+}
     .social-handle a, .social-handle-mobile a {
         font-size:24px;
         line-height: 48px;
@@ -323,9 +337,6 @@ footer .right-half {
 .navbar-collapsed {
     height:70px;
 }
-.navmenu > li {
-    display: inline;
-}
 .navmenu a {
     text-decoration: none;
     color:white;
@@ -336,7 +347,7 @@ footer .right-half {
 }
 .navmenu a:hover {
     border-bottom: 5px #FFCD05 solid;
-    padding-bottom: 5px;
+    padding-bottom: 3px;
 }
 .navmenu-collapsed a {
     text-decoration: none;
@@ -528,7 +539,7 @@ footer .right-half a:hover {
 .navmenu .active-nav {
     color: #FFCD05;
     border-bottom: 5px #FFCD05 solid;
-    padding-bottom: 7px;
+    padding-bottom: 6px;
 }
 
 .center-lines {
