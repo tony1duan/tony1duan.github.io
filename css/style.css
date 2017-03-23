@@ -1,8 +1,5 @@
 html, body {
     overflow-x:hiden;
-<<<<<<< HEAD
-}
-=======
 }
 body {
     font-family: "Nunito Sans", sans-serif;
@@ -472,4 +469,3 @@ footer .right-half a:hover {
 .center-lines::after{
     left:1.5%;
 }
->>>>>>> origin/projects
