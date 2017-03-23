@@ -526,6 +526,9 @@ footer .right-half a:hover {
 .textarea-container {
     padding-bottom: 0px;
 }
+.fieldcontainer {
+    padding:0;
+}
 #id123-control27310717-1, #id123-control27310717-2, #id123-control27310718 {
     width:100%;
     max-width:300px;
