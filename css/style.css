@@ -110,7 +110,6 @@ a {
     font-size:18px;
     line-height: 36px;
 }
-
 .project-item>.container {
     padding:25px;
     max-width: 75vw;
@@ -121,6 +120,19 @@ a {
 .project-item p {
         margin-left:0px;
     }
+/* to get rid of the hover effect in mobile devices */
+.item-generic-paper {
+    background-image: url(../img/generic-paper-background-2x.jpg);
+} 
+.item-find-my-games {
+    background-image: url(../img/find-my-games-background-2x.jpg);
+}
+.item-blocbox {
+    background-image: url(../img/blocbox-background-2x.jpg);
+}
+.item-waina-trading {
+    background-image: url(../img/waina-trading-background-2x.jpg);
+}
 footer img {
     height: 70px;
 }
@@ -209,6 +221,20 @@ footer .right-half {
     }
     .project-item .left-half, .project-item .right-half {
         width:100%;
+    }
+/*    to add hover effect to desktops*/
+    
+    .item-generic-paper {
+        background-image: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)),url(../img/generic-paper-background-2x.jpg);
+    }
+    .item-find-my-games {
+        background-image: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)),url(../img/find-my-games-background-2x.jpg);
+    }
+    .item-blocbox {
+        background: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)),url(../img/blocbox-background-2x.jpg);
+    }
+    .item-waina-trading {
+        background: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)),url(../img/waina-trading-background-2x.jpg);
     }
     footer .left-half {
         height:100%;
@@ -344,9 +370,7 @@ footer .right-half a:hover {
 
 }
 /*GENERIC PAPER*/
-.item-generic-paper {
-    background-image: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)),url(../img/generic-paper-background-2x.jpg);
-}
+
 .item-generic-paper:hover {
     background-image: url(../img/generic-paper-background-2x.jpg);
 } 
@@ -358,9 +382,7 @@ footer .right-half a:hover {
     border-right:5px solid #48C2C5;
 }
 /*FIND MY GAMES*/
-.item-find-my-games {
-    background-image: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)),url(../img/find-my-games-background-2x.jpg);
-}
+
 .item-find-my-games:hover {
     background-image: url(../img/find-my-games-background-2x.jpg);
 } 
@@ -372,9 +394,7 @@ footer .right-half a:hover {
     border-right:5px solid #AB1E1E;
 }
 /*BLOCBOX*/
-.item-blocbox {
-    background: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)),url(../img/blocbox-background-2x.jpg);
-}
+
 .item-blocbox:hover {
     background-image: url(../img/blocbox-background-2x.jpg);
 }
@@ -386,9 +406,6 @@ footer .right-half a:hover {
     border-right:5px solid #8BBDE5;
 }
 /*WAINA TRADING*/
-.item-waina-trading {
-    background: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)),url(../img/waina-trading-background-2x.jpg);
-}
 .item-waina-trading:hover {
     background-image: url(../img/waina-trading-background-2x.jpg);
 }
