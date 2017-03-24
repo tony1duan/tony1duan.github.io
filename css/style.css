@@ -85,7 +85,7 @@ a {
 .site-logo>img {
     height:80px;
     position: relative;
-    padding: 25px;
+    padding: 20px;
     border-right: 1px solid #353535;
 }
 .navbar>.left-half {
@@ -97,7 +97,7 @@ a {
 }
 .social-handle-mobile {
     position: relative;
-    margin: 25px;
+    margin: 20px;
 }
 .navmenu {
     margin: 0px;
@@ -121,7 +121,7 @@ a {
     line-height: 36px;
 }
 .project-item>.container {
-    padding:25px;
+    padding:20px;
     max-width: 75vw;
     }
 .project-item h2 {
@@ -217,7 +217,7 @@ footer .right-half {
         max-height: 250px;
     }
     .navmenu {
-        margin-bottom: 25px;           /*    0px in mobile view; margin-left is defined in mobile view */
+        margin-bottom: 20px;           /*    0px in mobile view; margin-left is defined in mobile view */
     }
     .navmenu-background {
         padding:0;                      /*    to reset the padding from 15px in mobile view, so the background can line up with the grid*/
@@ -241,8 +241,8 @@ footer .right-half {
     .social-handle {
         display: block;
         text-align: right;
-        margin-top: 25px;
-        margin-right: 25px;
+        margin-top: 20px;
+        margin-right: 20px;
     }
     .homepage .black-background-40 {
         background: rgba(0, 0, 0, .4);
@@ -321,7 +321,7 @@ footer .right-half {
         width:67%;
     }
     .project-item p {
-        margin-left: 25px;
+        margin-left: 20px;
     }
 }
 /* HEADER ----------------------------------------------------------------------------*/
@@ -341,8 +341,8 @@ footer .right-half {
     text-decoration: none;
     color:white;
     font-family: "futura-pt", sans-serif;
-    margin-left:25px;                           /*    this is defined in a tag instead of .navmenu to prevent full width of the page being more than 100% */
-    margin-right:25px;
+    margin-left:20px;                           /*    this is defined in a tag instead of .navmenu to prevent full width of the page being more than 100% */
+    margin-right:20px;
     line-height: 2em;
 }
 .navmenu a:hover {
@@ -367,8 +367,8 @@ footer .right-half {
 .social-handle a:hover, .social-handle-mobile a:hover{
     color:#AC4D9D;
 }
-.intro-text {
-    margin: 25px;
+.intro-text, .main-content {
+    margin: 20px;
 }
 /* FOOTER ------------------------------------------------------------------------*/
 footer {
@@ -381,10 +381,10 @@ footer .container {
    
 }
 footer .left-half a{
-    margin:24px;
+    margin:25px;
 }
 footer .right-half ul{
-    margin:24px;
+    margin:25px;
 }
 footer .right-half a:hover {
     color: #AC4D9D;
@@ -499,8 +499,10 @@ footer .right-half a:hover {
     text-transform:uppercase;
     background-color: #FFCD05;
     border:none;
-    width:300px;
+    width:400px;
+    max-width: 100%;
     padding:0.3em;
+    margin-right: 20px;
 }
 .class123-label {
     color:white;
@@ -513,12 +515,15 @@ footer .right-half a:hover {
     font-size:14px;
     color: #bbbbbb;
     margin-top: 0px;
+    position: relative;
+    bottom: 20px;
 }
 #id123-control27310721 {
     width:100%;
-    height:150px;
-    max-width:300px;
+    height:200px;
+    max-width:600px;
     margin-bottom: 0;
+    margin-right: 20px;
 }
 .subitem {
     padding-bottom: 0px;
@@ -527,12 +532,15 @@ footer .right-half a:hover {
     padding-bottom: 0px;
 }
 .fieldcontainer {
-    padding:0;
+    padding-left:0;
+    padding-right: 20px
 }
 #id123-control27310717-1, #id123-control27310717-2, #id123-control27310718 {
     width:100%;
-    max-width:300px;
+    max-width:400px;
     height:40px;
+    margin-right: 20px;
+
 }
 .spam-trap {
     display:none;
