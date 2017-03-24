@@ -502,7 +502,7 @@ footer .right-half a:hover {
     width:400px;
     max-width: 100%;
     padding:0.3em;
-    margin-right: 20px;
+    margin-right: auto;
 }
 .class123-label {
     color:white;
@@ -519,27 +519,29 @@ footer .right-half a:hover {
     bottom: 20px;
 }
 #id123-control27310721 {
-    width:100%;
+    width:98%;
     height:200px;
     max-width:600px;
     margin-bottom: 0;
-    margin-right: 20px;
+    margin-right: auto;
 }
 .subitem {
     padding-bottom: 0px;
 }
 .textarea-container {
+    width:100%;
     padding-bottom: 0px;
 }
 .fieldcontainer {
+    width:100%;
     padding-left:0;
-    padding-right: 20px
+    padding-right: auto;
 }
 #id123-control27310717-1, #id123-control27310717-2, #id123-control27310718 {
-    width:100%;
+    width:98%;
     max-width:400px;
     height:40px;
-    margin-right: 20px;
+    margin-right: auto;
 
 }
 .spam-trap {
