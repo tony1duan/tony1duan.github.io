@@ -1,0 +1,592 @@
+html, body {
+    overflow-x:hiden;
+}
+body {
+    font-family: "Nunito Sans", sans-serif;
+}
+h1, h4, h5, h6 {
+    font-family: "futura-pt", sans-serif;
+}
+h1 {
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0.5em;
+}
+h2, h3 {
+    font-family: "futura-pt-condensed", sans-serif;
+}
+h2 {
+    font-size: 32px;
+    font-weight: 700;
+}
+h3 {
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+p{
+    margin: 0;
+}
+.standard-text {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 200;
+}
+.large-text{
+    font-size: 18px;
+    line-height: 33px;
+    font-weight: 200; 
+}
+.more-projects {
+    font-size:24px;
+}
+.white{
+    color:white;
+}
+ul {
+    list-style-type: none;
+    padding-left:0;  /*To override the default 40px from the brawser*/
+}
+a {
+    text-decoration: none;
+    color:inherit;
+}
+.gray-background {
+    background-color:#0f0f0f;
+}
+.black-background-40 {
+    background: rgba(0, 0, 0, .4);
+}
+.black-background-80 {
+    background: rgba(0, 0, 0, .92);
+}
+
+/* GRID --------------------------------------------------------------------------------*/
+.container {
+    margin-right:auto;
+    margin-left: auto;
+    position:relative;
+}
+.container:before,.container:after {
+    content: " ";
+    display:table;
+}
+.container:after {
+    clear:both;
+}
+.center-text {
+    text-align: center;
+}
+
+/* Media Queries -------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* MOBILE VIEW ------------------------------------------------------------------- */
+.left-half, .right-half {
+    width: 100%;
+}
+.header-background {
+    background-color: transparent;
+}
+.homepage .black-background-40 {
+    background-color: transparent;
+}
+img.site-logo{
+    height:80px;
+    position: relative;
+    padding: 20px;
+    border-right: 1px solid #353535;
+}
+.navbar>.left-half {
+    display:inline-flex;
+    align-items: flex-end;
+}
+.social-handle {
+    display: none;
+}
+.social-handle-mobile {
+    position: relative;
+    margin: 20px;
+}
+.navmenu {
+    margin: 0px;
+}
+.navbar .navmenu-background {
+    /*padding-top: 15px;
+    padding-bottom: 15px;*/
+}
+.navmenu a {
+    font-size:24px;
+}
+.navmenu > li {
+    display: inline-block;
+    min-width:155px;
+}
+#linebreak-1 {
+    display: none;
+}
+.social-handle a, .social-handle-mobile a {
+    font-size:18px;
+    line-height: 36px;
+}
+.project-item>.container {
+    padding:20px;
+    max-width: 75vw;
+    }
+.project-item h2 {
+    text-align: center;
+}
+.project-item p {
+        margin-left:0px;
+    }
+/* to get rid of the hover effect in mobile devices */
+.item-generic-paper {
+    background-image: url(../img/generic-paper-background-2x.jpg);
+} 
+.item-find-my-games {
+    background-image: url(../img/find-my-games-background-2x.jpg);
+}
+.item-blocbox {
+    background-image: url(../img/blocbox-background-2x.jpg);
+}
+.item-waina-trading {
+    background-image: url(../img/waina-trading-background-2x.jpg);
+}
+footer img {
+    height: 70px;
+}
+footer .left-half {
+    display:flex;
+    align-items: flex-end;
+}
+footer .right-half {
+    display: none;
+}
+
+/* TABLET VIEW ------------------------------------------------------------------- */
+@media (min-width: 600px) {
+    .container {
+        width: 100%;
+    }
+    .left-half, .right-half {
+        float:none;
+        clear: left;
+    }
+    .header-background {
+        background: url('../img/header-background-2x.jpg');
+    }
+    .site-logo>img {
+        height:120px;
+    }
+    footer {
+        font-size: 24px;
+    }
+}
+
+/* DESKTOP ------------------------------------------------------------------- */
+@media (min-width: 768px) {
+    h1, h2 {
+        font-size: 50px;
+    }
+    h3 {
+        font-size:32px;
+    }
+    .standard-text {
+        font-size: 18px;
+    }
+    .large-text{
+        font-size: 20px; 
+    }
+    .more-projects {
+        font-size:32px;
+    }
+    .container {
+        width:750px;
+    }
+    .left-half, .right-half {
+        float:left;
+        clear:none;
+        position: relative;
+    }
+    .left-half {
+        width:33%;
+    }
+    .right-half {
+        width:67%;
+    }
+    
+    .social-handle-mobile {
+        display: none;
+    }
+/*    div.site-logo {
+        height:120px;
+        border:none;
+    }*/
+    .navbar {
+        height:30vh;
+        min-height: 175px;
+        max-height: 250px;
+    }
+    .navmenu {
+        margin-bottom: 20px;           /*    0px in mobile view; margin-left is defined in mobile view */
+    }
+    .navmenu-background {
+        padding:0;                      /*    to reset the padding from 15px in mobile view, so the background can line up with the grid*/
+    }
+    .navbar>.left-half {
+        height:100%;
+        max-height: 300px;
+        display:inline-flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+    .navbar>.right-half {
+        height:100%;
+        display:inline-flex;
+        align-items: flex-end;
+        justify-content: flex-start;
+    }
+    #linebreak-1 {
+        display: inline;
+    }
+    .social-handle {
+        display: block;
+        text-align: right;
+        margin-top: 20px;
+        margin-right: 20px;
+    }
+    .homepage .black-background-40 {
+        background: rgba(0, 0, 0, .4);
+    }
+    .project-item .left-half, .project-item .right-half {
+        width:100%;
+    }
+/*    to add hover effect to desktops*/
+    
+    .item-generic-paper {
+        background-image: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)),url(../img/generic-paper-background-2x.jpg);
+    }
+    .item-find-my-games {
+        background-image: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)),url(../img/find-my-games-background-2x.jpg);
+    }
+    .item-blocbox {
+        background: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)),url(../img/blocbox-background-2x.jpg);
+    }
+    .item-waina-trading {
+        background: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)),url(../img/waina-trading-background-2x.jpg);
+    }
+    footer .left-half {
+        height:100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    footer .right-half {
+        height:100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    footer li {
+        list-style-type: none;
+        display: inline;
+        margin-right: 50px;
+    }
+}
+
+/* DESKTOP FULL ------------------------------------------------------------------- */
+@media (min-width: 992px) {
+    .container {
+        width: 960px;
+    }
+    .navbar {
+        height:40vh;
+        min-height: 200px;
+        max-height: 250px;
+    }
+/*    div.site-logo{
+        height:150px;
+    }*/
+    .navmenu a {
+        font-size:32px;
+    }
+    .navmenu > li {
+    display: inline-block;
+    min-width:188px;
+}
+    .social-handle a, .social-handle-mobile a {
+        font-size:24px;
+        line-height: 48px;
+    }
+    .project-item .container {
+        display: -webkit-flex;
+        display:flex;
+        align-items: center;
+    }
+    .project-item .left-half {
+        text-align: right;
+        width:33%;
+    }
+
+    .project-item .right-half {
+        text-align: left;
+        width:67%;
+    }
+    .project-item p {
+        margin-left: 20px;
+    }
+}
+/* HEADER ----------------------------------------------------------------------------*/
+.header-background {
+    background-size: cover;
+    background-position: center center;
+    min-height: 100vh;
+    z-index: -100;
+}
+.navbar .navmenu-background {
+    background: rgba(172, 77, 157, 0.55)
+}
+/*.navbar-collapsed {
+    height:70px;
+}*/
+.navmenu a {
+    text-decoration: none;
+    color:white;
+    font-family: "futura-pt", sans-serif;
+    margin-left:20px;                           /*    this is defined in a tag instead of .navmenu to prevent full width of the page being more than 100% */
+    margin-right:20px;
+    line-height: 2em;
+}
+.navmenu a:hover {
+    border-bottom: 5px #FFCD05 solid;
+    padding-bottom: 3px;
+}
+.navmenu-collapsed a {
+    text-decoration: none;
+    color:white;
+    font-family: "futura-pt", sans-serif;
+    font-size: 24px;
+    margin-right:30px;
+}
+.navmenu-collapsed a:hover {
+    border-bottom: 5px #FFCD05 solid;
+    padding-bottom: 3px;
+}
+.navmenu-collapsed > li {
+    display: inline;
+}
+.social-handle a, .social-handle-mobile a {
+    text-decoration: none;
+    color: white;
+    font-family: "futura-pt", sans-serif;
+}
+.social-handle a:hover, .social-handle-mobile a:hover{
+    color:#AC4D9D;
+}
+.intro-text, .main-content {
+    margin: 20px;
+}
+/* FOOTER ------------------------------------------------------------------------*/
+footer {
+    height:150px;
+    font-family: "futura-pt", sans-serif;
+    color: white;
+}
+footer .container {
+    height:100%;
+   
+}
+footer .left-half a{
+    margin:25px;
+}
+footer .right-half ul{
+    margin:25px;
+}
+footer .right-half a:hover {
+    color: #AC4D9D;
+}
+/* PROJECTS ----------------------------------------------------------------------*/
+
+.project-item h2 {
+    position: relative;
+}
+.project-item p {
+    text-align: left;
+
+}
+/*GENERIC PAPER*/
+
+.item-generic-paper:hover {
+    background-image: url(../img/generic-paper-background-2x.jpg);
+} 
+.item-generic-paper h2 {
+    color: #48C2C5; 
+}
+.item-generic-paper:hover>.container {
+    border-left:5px solid #48C2C5;
+    border-right:5px solid #48C2C5;
+}
+/*FIND MY GAMES*/
+
+.item-find-my-games:hover {
+    background-image: url(../img/find-my-games-background-2x.jpg);
+} 
+.item-find-my-games h2 {
+    color: #AB1E1E;
+}
+.item-find-my-games:hover>.container {
+    border-left:5px solid #AB1E1E;
+    border-right:5px solid #AB1E1E;
+}
+/*BLOCBOX*/
+
+.item-blocbox:hover {
+    background-image: url(../img/blocbox-background-2x.jpg);
+}
+.item-blocbox h2 {
+    color: #8BBDE5;
+}
+.item-blocbox:hover>.container {
+    border-left:5px solid #8BBDE5;
+    border-right:5px solid #8BBDE5;
+}
+/*WAINA TRADING*/
+.item-waina-trading:hover {
+    background-image: url(../img/waina-trading-background-2x.jpg);
+}
+.item-waina-trading h2 {
+    color: #693F89;
+}
+.item-waina-trading:hover>.container {
+    border-left:5px solid #693F89;
+    border-right:5px solid #693F89;
+}
+.project-item {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 0%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: inline-block;
+    width:100%;
+    min-height: 380px;
+    max-height: 100vh;
+    display: -webkit-flex;
+    display:flex;
+    align-items: center;
+}
+.project-item>.container {
+    background:rgba(0,0,0,.6);
+}
+.more-projects {
+    height:100px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #353535;
+    border-top: 1px solid #353535;
+    font-family: "futura-pt", sans-serif;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.more-projects a:hover {
+    color: #FFCD05;
+}
+/* ABOUT ME ------------------------------------------------------------------*/
+.about-me-header .header-background-2 {
+    background: url('../img/contact&bio-background-2x.jpg');
+    background-size: cover;
+    background-position: center center;
+    min-height: 100vh;
+    z-index: -100;
+}
+
+/* CONTACT -------------------------------------------------------------------*/
+.form {
+    color: black;
+    font-family: "Nunito Sans", sans-serif;
+    font-size:18px;
+}
+#id123-button-send {
+    font-family: "futura-pt-condensed", sans-serif;
+    color:black;
+    font-size: 24px;
+    text-transform:uppercase;
+    background-color: #FFCD05;
+    border:none;
+    width:400px;
+    max-width: 100%;
+    padding:0.3em;
+    margin-right: auto;
+}
+.class123-label {
+    color:white;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 18px;
+}
+.class123-labelinfo {
+    font-family: "Nunito Sans", sans-serif;
+    color:black;
+    font-size:14px;
+    color: #bbbbbb;
+    margin-top: 0px;
+    position: relative;
+    bottom: 20px;
+}
+#id123-control27310721 {
+    width:98%;
+    height:200px;
+    max-width:600px;
+    margin-bottom: 0;
+    margin-right: auto;
+}
+.subitem {
+    padding-bottom: 0px;
+}
+.textarea-container {
+    width:100%;
+    padding-bottom: 0px;
+}
+.fieldcontainer {
+    width:100%;
+    padding-left:0;
+    padding-right: auto;
+}
+#id123-control27310717-1, #id123-control27310717-2, #id123-control27310718 {
+    width:98%;
+    max-width:400px;
+    height:40px;
+    margin-right: auto;
+
+}
+.spam-trap {
+    display:none;
+}
+
+/*STAT CHANGE ----------------------------------------------------------------*/
+.navmenu .active-nav {
+    color: #FFCD05;
+    border-bottom: 5px #FFCD05 solid;
+    padding-bottom: 6px;
+}
+
+.center-lines {
+    content: "";
+    display: table;
+}
+.center-lines::before, .center-lines::after {
+    border-top: 1px solid #353535;
+    content: '';
+    display: table-cell;
+    position: relative;
+    top:0.7em;
+    width: 45%;
+    vertical-align: middle;
+}
+.center-lines::before{
+    right:1.5%;
+}
+.center-lines::after{
+    left:1.5%;
+}

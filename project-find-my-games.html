@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Tony Duan UI/UX Design</title>
+
+    <!--    JQuery-->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous"> -->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script> -->
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,700" rel="stylesheet">    
+    <!-- Adobe Typekit -->
+    <script src="https://use.typekit.net/rll2gzu.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script> 
+    
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.2/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/project-find-my-game.css">
+    <script>
+        $(document).ready(function()
+        {
+            // $(window).scroll(function()
+            // {
+            //     if($(document).scrollTop() >= 50 && $('nav').hasClass('navbar'))
+            //     {
+            //         $('nav').removeClass('navbar');
+            //         $('nav').addClass('navbar-shrunk');
+            //     }
+            //     else if($(document).scrollTop() < 50 && $('nav').hasClass('navbar-shrunk'))
+            //     {
+            //         $('nav').removeClass('navbar-shrunk');
+            //         $('nav').addClass('navbar');
+            //     }
+            // });
+        });
+    </script>
+</head>
+<body class="find-my-games">
+    <nav class="navbar-shrunk black-background-80">
+        <!-- <div class="container"> -->
+            <!-- <div class="left-half"> -->
+                <a href="index.html" class="site-logo-small"><img class="site-logo-small" src="img/tony-duan-logo-small.png" /></a>
+            <!-- </div> -->
+            <!-- <div class="right-half"> -->
+                <ul class="navbar-arrows">
+                    <li><a href="contact.html"><div class="left-arrow"></div></a></li>
+                    <li><a href="contact.html"><div class="right-arrow"></div></a></li>
+                </ul>
+                <ul class="navmenu-shrunk">
+                    <li><a href="index.html">home</a></li>
+                    <li><a class="active-nav" href="index.html#projects">projects</a></li><br id="linebreak-1">
+                    <li><a href="about-me.html">about me</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                </ul>
+            <!-- </div> -->
+        <!-- </div> -->
+    </nav>
+    <header class="header-bg">
+        <div class="project-title-bg">
+            <div class="container title-section">
+                <img class="find-my-games-logo" src="img/project-find-my-games/logo.png">
+                <h1 class="white">find my games</h1>
+                <h3 class="white">A mobile app to find pick up games</h3>
+            </div>
+        </div>
+        <section class="introduction white">
+            <div class="container">
+                <p>This is an iOS app designed to help basketball players to find pick up games. The user research point out that many basketball players have encountered these situations: either they have difficulty finding other players to start a game, or they arrive at the basketball court only to find that it is already full.</p>
+                <p>The solution is to build a connected experience when people can find games and games can find people. The centre piece of the puzzle is to start with a location based interface and allow people to set up “clubs”. These “clubs” works like interest groups so organizers could easily add games to their clubs in the future. The game page and the user profile page act as two important hubs which are connected to each other so that a user is able to find a game through a friend or get to make friends through a game. The user can even see the thumbnails of friends profile photo before they open up the game page to get a quick glance of who is playing</p>
+            </div>
+            <div class="container image">
+                <img class="project-showcase" src="img/project-find-my-games/app-showcase.png">
+            </div>
+        </section>
+    </header>
+    <section class="challenge">
+        <div class="container">
+            <h3 class="center-lines center-text">The Challenge</h3>
+        </div>
+        <div class="container">
+            <div class="one-half">
+                <p>Most of users do not use apps to find basketball games. When asked why not, many people complained the lack of local data and social connection. When no one else is using the app to organize games, it is easy to imagine why they just use the text message on their phone to organize games. This could be convenient until the group gets bigger. Indeed, keeping everyone informed become very difficult for large groups. Not to mention often times players have difficulty to find people who want to play basketball with them. Even worse, when they finally get a group together during weekends, the basketball court could be too busy. The pick up game experience could be so much better if only there is an easy way to organize games, keep everyone informed, and be able to see if there are games in the courts they are planning to play.</p>
+            </div>
+            <div class="one-half">
+                <div class="complains-heading">Complains</div>
+                <p class="complains large-text"><em>83.3%</em> of respondents mentioned there are no friends on other pickup game apps</p>
+                <p class="complains large-text"><em>66.7%</em> says lack of local court information keeps them from using the existing apps</p>
+                <div class="expectations-heading">Expectation</div>
+                <p class="expectations large-text"><em>77.8%</em> of surveyed potential users wishes to see who is playing in selected locations</p>
+                <p class="expectations large-text"><em>72.2%</em> respondents expect to schedule games within the app</p>
+            </div>
+        </div>
+    </section>
+    <section class="personas">
+        <div class="container">
+            <h3 class="center-lines center-text">Personas</h3>
+        </div>
+        <div class="container">
+            <p>Most of users do not use apps to find basketball games. When asked why not, many people complained the lack of local data and social connection. When no one else is using the app to organize games, it is easy to imagine why they just use the text message on their phone to organize games. This could be convenient until the group gets bigger. Indeed, keeping everyone informed become very difficult for large groups. Not to mention often times players have difficulty to find people who want to play basketball with them. Even worse, when they finally get a group together during weekends, the basketball court could be too busy. The pick up game experience could be so much better if only there is an easy way to organize games, keep everyone informed, and be able to see if there are games in the courts they are planning to play.</p>
+        </div>
+        <div class="container">
+            <div class="persona-container">                
+                <div class="one-third">
+                    <div class="persona">
+                        <img class="persona-image" src="img/project-find-my-games/persona-helen.jpg">
+                        <div class="persona-description">
+                            <p class="persona-testimony">“Any sports to me is ten times more fun with friends”</p>
+                            <div class="persona-text">Helen is an university student who enjoys being with friends. She has a very active life style and she is social. So jogging, yoga, or soccer, no matter what it is, it is always more fun with people to interact with.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="one-third">
+                    <div class="persona">
+                        <img class="persona-image" src="img/project-find-my-games/persona-david.jpg">
+                        <div class="persona-description">
+                            <p class="persona-testimony">“Nothing makes friendship stronger than fierce competition”</p>
+                            <p class="persona-text">David is loves basketball and plays it from young age. He played for school team in college and basketball remains his number one hobby. He loves to play with good players so it makes him better too. He sometimes struggles to find players atthe same level so the game quickly becomes boring foreveryone.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="one-third">
+                    <div class="persona">
+                        <img class="persona-image" src="img/project-find-my-games/persona-henry.jpg">
+                        <div class="persona-description">
+                            <p class="persona-testimony">“It is a pain trying to set up a game with friends and then the plan changes but everyone is on a different page”</p>
+                            <p class="persona-text">Helen is an university student who enjoys being with friends. She has a very active life style and she is social. So jogging, yoga, or soccer, no matter what it is, it is always more fun with people to interact with</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="user-stories">
+        <div class="container">
+            <h3 class="center-lines center-text">User Stories</h3>
+        </div>
+        <div class="container center-text">
+           <img class="user-stories" src="img/project-find-my-games/user-stories.jpg" alt="">
+        </div>
+    </section>
+    <section class="user-flow">
+        <div class="container">
+            <h3 class="center-lines center-text">User Flow</h3>
+        </div>
+        <div class="container center-text">
+            <div class="user-flow-text">The core of the user flow is to help people to find games and help games to find people. This is essential for the app since it needs to connect these two entities.</div>
+        </div>
+        <div class="container">
+            <div class="one-half">
+                <img class="user-flow" src="img/project-find-my-games/user-flow-1.jpg" alt="">
+            </div>
+            <div class="one-half">
+                <img class="user-flow" src="img/project-find-my-games/user-flow-2.jpg" alt="">
+            </div>
+        </div>
+        <div class="container">
+            <img class="user-flow" src="img/project-find-my-games/user-flow-3.jpg" alt="">
+        </div>
+    </section>
+    <section class="progress">
+        <div class="container">
+            <h3 class="center-lines center-text">ITERATIONS AND PAPER WIREFRAMES</h3>
+            <div class="left-half">
+                <img class="progress" src="img/project-find-my-games/wireframe-1.jpg" alt="">
+            </div>
+            <div class="right-half">
+                <img class="progress" src="img/project-find-my-games/wireframe-2.jpg" alt="">
+            </div>
+            <div class="one-half">
+                <img class="progress" src="img/project-find-my-games/wireframe-3.jpg" alt="">
+            </div>
+            <div class="one-half">
+                <img class="progress" src="img/project-find-my-games/wireframe-4.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="screens">
+        <div class="container center-text">
+            <img class="project-showcase" src="img/project-find-my-games/app-showcase.png">
+            <div class="app-screens"></div>
+        </div>
+    </section>
+    <section class="nav-ribbon gray-background">
+        <div class="container">
+            <div class="one-half center-text">
+                <div class="nav-direction">Previous: <a href="" class="nav-destination" id="des-genericpaper">generic paper</a href=""></div>
+            </div>
+            <div class="one-half center-text">
+                <div class="nav-direction">Next: <a href="" class="nav-destination" id="des-blocbox">Blocbox</a></div>
+            </div>
+        </div>
+    </section>
+    <footer class="gray-background">
+        <div class="container">
+            <div class="left-half">
+                <a href="index.html"><img src="img/tony-duan-logo-small.png" alt="Homepage" /></a>
+                <ul class="social-handle-mobile">
+                    <li><a href="http://www.linkedin.com/in/tony-duan">linkedin</a></li>
+                    <li><a href="http://www.github.com/tony1duan">github</a></li>
+                </ul>    
+            </div>
+            <div class="right-half">    
+                <ul>
+                    <li><a href="http://www.linkedin.com/in/tony-duan">linkedin</a></li>
+                    <li><a href="http://www.github.com/tony1duan">github</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
