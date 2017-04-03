@@ -25,44 +25,22 @@
     <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.2/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/project-find-my-game.css">
-    <script>
-        $(document).ready(function()
-        {
-            // $(window).scroll(function()
-            // {
-            //     if($(document).scrollTop() >= 50 && $('nav').hasClass('navbar'))
-            //     {
-            //         $('nav').removeClass('navbar');
-            //         $('nav').addClass('navbar-shrunk');
-            //     }
-            //     else if($(document).scrollTop() < 50 && $('nav').hasClass('navbar-shrunk'))
-            //     {
-            //         $('nav').removeClass('navbar-shrunk');
-            //         $('nav').addClass('navbar');
-            //     }
-            // });
-        });
-    </script>
 </head>
 <body class="find-my-games">
     <nav class="navbar-shrunk black-background-80">
-        <!-- <div class="container"> -->
-            <!-- <div class="left-half"> -->
-                <a href="index.html" class="site-logo-small"><img class="site-logo-small" src="img/tony-duan-logo-small.png" /></a>
-            <!-- </div> -->
-            <!-- <div class="right-half"> -->
-                <ul class="navbar-arrows">
-                    <li><a href="contact.html"><div class="left-arrow"></div></a></li>
-                    <li><a href="contact.html"><div class="right-arrow"></div></a></li>
-                </ul>
-                <ul class="navmenu-shrunk">
-                    <li><a href="index.html">home</a></li>
-                    <li><a class="active-nav" href="index.html#projects">projects</a></li><br id="linebreak-1">
-                    <li><a href="about-me.html">about me</a></li>
-                    <li><a href="contact.html">contact</a></li>
-                </ul>
-            <!-- </div> -->
-        <!-- </div> -->
+        <div class="container">
+            <a href="index.html" class="site-logo-small"><img class="site-logo-small" src="img/tony-duan-logo-small.png" /></a>
+            <ul class="navbar-arrows">
+                <li><a href="contact.html"><div class="left-arrow"></div></a></li>
+                <li><a href="contact.html"><div class="right-arrow"></div></a></li>
+            </ul>
+            <ul class="navmenu-shrunk">
+                <li><a href="index.html">home</a></li>
+                <li><a class="active-nav" href="index.html#projects">projects</a></li><br id="linebreak-1">
+                <li><a href="about-me.html">about me</a></li>
+                <li><a href="contact.html">contact</a></li>
+            </ul>
+        </div>
     </nav>
     <header class="header-bg">
         <div class="project-title-bg">
@@ -183,16 +161,32 @@
             </div>
         </div>
     </section>
+    <section class="survery">
+        <div class="container">
+            <h3 class="center-lines center-text">Usability Survey</h3>
+            <div class="survery">
+                
+            </div>
+        </div>
+    </section>
     <section class="screens">
         <div class="container center-text">
-            <img class="project-showcase" src="img/project-find-my-games/app-showcase.png">
-            <div class="app-screens"></div>
+            <img class="project-showcase" src="img/project-find-my-games/app-showcase.png"/>
         </div>
+            <div class="container app-screens">
+                <img src="img/project-find-my-games/app-showcase-1.jpg">
+                <img src="img/project-find-my-games/app-showcase-2.jpg">
+                <img src="img/project-find-my-games/app-showcase-3.jpg">
+                <img src="img/project-find-my-games/app-showcase-4.jpg">
+                <img src="img/project-find-my-games/app-showcase-5.jpg">
+                <img src="img/project-find-my-games/app-showcase-6.jpg">
+            </div>
+        
     </section>
     <section class="nav-ribbon gray-background">
         <div class="container">
             <div class="one-half center-text">
-                <div class="nav-direction">Previous: <a href="" class="nav-destination" id="des-genericpaper">generic paper</a href=""></div>
+                <div class="nav-direction">Previous: <a href="" class="nav-destination" id="des-genericpaper">generic paper</a></div>
             </div>
             <div class="one-half center-text">
                 <div class="nav-direction">Next: <a href="" class="nav-destination" id="des-blocbox">Blocbox</a></div>
