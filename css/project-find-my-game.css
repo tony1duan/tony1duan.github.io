@@ -1,6 +1,95 @@
-.find-my-game-logo{
-	height: 120px;
+.project-title-bg {
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url('../img/find-my-games-background-2x.jpg');
+    background-position: center top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
-.title-section{
-	text-align: center;
+
+.project-showcase {
+    height: 100%;
+    min-width: 300px;
+}
+
+.before-after {
+    padding: 5px;
+}
+
+
+/* Media Queries -------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+/* MOBILE VIEW ------------------------------------------------------------------- */
+
+.appshot {
+    width: 300px;
+    height: 533.18px;
+    margin: 5px 5px;
+}
+
+.survey .bubble-1 {
+    transform: translate(-35px, -8px);
+}
+.survey .bubble-2 {
+    transform: translate(6px, -18px)
+}
+.survey .bubble-3 {
+    transform: translate(-24px, -18px)
+}
+@media (max-width: 620px) {}
+
+
+/* TABLET VIEW ------------------------------------------------------------------- */
+
+@media (min-width: 620px) {
+    .survey .bubble-1 {
+        transform: translate(45px, 15px);
+    }
+    .survey .bubble-3 {
+    transform: translate(6px, -18px)
+}
+}
+
+@media (max-width: 768px) {
+    .progress a {
+        max-width: 300px;
+        height: 100%;
+        max-height: 216.8px;
+    }
+/*
+    .progress .wireframe-image a:first-child {
+        width: 134.61px;
+        height: 213.812px;
+    }
+*/
+}
+
+
+/* DESKTOP ------------------------------------------------------------------- */
+
+@media (min-width: 768px) {
+    .appshot {
+        width: 25%;
+        height: 25%;
+    }
+    .appshot {
+        position: relative;
+        /*        left: 50px;*/
+    }
+    .survey .bubble-1,
+    .survey .bubble-2,
+    .survey .bubble-3 {
+        transform: translate(65px, -14px);
+    }
+}
+
+
+/* DESKTOP FULL ------------------------------------------------------------------- */
+
+@media (min-width: 992px) {
+    .survey .bubble-1,
+    .survey .bubble-2,
+    .survey .bubble-3 {
+        transform: translate(89px, -19px);
+    }
 }
