@@ -1,0 +1,240 @@
+.project-title-bg {
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url('../img/blocbox-background-2x.jpg');
+    background-position: center top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.header-bg {
+    background: rgba(32, 32, 32, 1);
+    background: -webkit-linear-gradient(rgba(32, 32, 32, 1) 0%, rgba(32, 32, 32, 1) 90%, rgba(255, 255, 255, 0) 90%, rgba(255, 255, 255, 0) 100%);
+    background: -o-linear-gradient(rgba(32, 32, 32, 1) 0%, rgba(32, 32, 32, 1) 90%, rgba(255, 255, 255, 0) 90%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(rgba(32, 32, 32, 1) 0%, rgba(32, 32, 32, 1) 90%, rgba(255, 255, 255, 0) 90%, rgba(255, 255, 255, 0) 100%);
+}
+
+.find-my-games-logo {
+    height: 120px;
+}
+
+.title-section {
+    text-align: center;
+    padding: 120px 0 50px 0;
+}
+
+
+/*div.site-logo{
+	background: url('../img/tony-duan-logo-full.png') no-repeat 0% 0%;
+	background-size: cover;
+	height: 120px;
+	width: 80px;
+	margin: 0 20px 20px 0;
+}*/
+
+.full-width-container {
+    background: #fff;
+    background-position: 50px 50px;
+    background-image: #fff;
+}
+
+section.introduction .image {
+    text-align: center;
+}
+
+.project-showcase {
+    width: 100%;
+    min-width: 300px;
+}
+
+/*
+.one-half {
+    width: 100%;
+    display: block;
+}
+
+.one-third {
+    width: 100%;
+    float: left;
+}
+*/
+
+.complains-heading,
+.expectations-heading {
+    padding: 0 10px;
+    font-size: 24pt;
+    color: white;
+}
+
+.complains-heading {
+    background: #AB1E1E;
+}
+
+p.complains {
+    color: #AB1E1E;
+}
+
+.complains em,
+.expectations em {
+    font-size: 20pt;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.expectations-heading {
+    background: #00691e;
+}
+
+p.expectations {
+    color: #00691e;
+}
+
+.persona-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0 0 0;
+}
+
+.persona {
+    margin: 0 20px;
+    height: 100%;
+}
+
+.persona-image {
+    width: 100%;
+}
+
+.persona-description {
+    padding: 0 35px;
+    color: white;
+    /*width: 300px;*/
+}
+
+.persona-testimony {
+    font-style: italic;
+    font-size: 10pt;
+}
+
+.persona-description {
+    margin: 10px 0 0 0;
+}
+
+.persona-text {
+/*    margin: 10px 0;*/
+}
+
+img.user-stories,
+img.user-flow {
+/*    width: 90%;*/
+}
+
+.user-flow-text {
+/*
+    width: 50%;
+    display: inline-block;
+*/
+}
+
+img.progress {
+/*    width: 90%;*/
+}
+
+.app-screens {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    /*    margin: auto;*/
+    /*    grid-template-columns: 32% 32% 32%;*/
+    /*    grid-gap: 10px;*/
+    /*    justify-content: space-around;*/
+    /*    overflow:hidden;*/
+}
+
+.app-screens>img {
+    width: 30%;
+    min-width: 300px;
+    height: auto;
+    margin: 5px;
+}
+
+div.survey {
+    display: flex;
+    flex-flow: column;
+}
+
+.survey-cell {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    margin: 10px 0;
+}
+
+.survey-cell p,
+.appshot {
+    /*display: inline;*/
+    width: 25%;
+}
+
+.gameview-bubble {
+    display: block;
+    max-width: 150px;
+    max-height: 150px;
+    width: auto;
+    height: auto;
+    position: relative;
+    left: -100px;
+    top: 75px;
+    border: 0.5px solid #A0A0A0;
+    border-radius: 75px;
+}
+
+.nav-ribbon {
+    display: flex;
+    align-items: center;
+    height: 130px;
+    background: #000;
+}
+
+.nav-direction {
+    display: inline;
+    color: white;
+    text-transform: lowercase;
+    font-size: 20pt;
+    font-weight: 700;
+}
+
+.nav-destination {
+    display: inline;
+}
+
+.hf-wireframe-images {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hf-wireframe-image {
+/*    width: 100%;*/
+}
+
+.ninetyeight-image {
+    width: 98%;
+    margin: 2% 10px;
+}
+
+
+/* Media Queries -------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+/* TABLET VIEW ------------------------------------------------------------------- */
+/*
+
+@media (min-width: 768px) {
+    .one-half {
+        width: 50%;
+        float: left;
+    }
+    .one-third {
+        width: 33.3%;
+    }
+}
+*/

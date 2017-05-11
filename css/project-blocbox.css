@@ -1,0 +1,97 @@
+.project-title-bg {
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url('../img/blocbox-background-2x.jpg');
+    background-position: center top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.header-bg {
+    background: rgba(32, 32, 32, 1);
+    /*
+    background: -webkit-linear-gradient(rgba(32, 32, 32, 1) 0%, rgba(32, 32, 32, 1) 90%, rgba(255, 255, 255, 0) 90%, rgba(255, 255, 255, 0) 100%);
+    background: -o-linear-gradient(rgba(32, 32, 32, 1) 0%, rgba(32, 32, 32, 1) 90%, rgba(255, 255, 255, 0) 90%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(rgba(32, 32, 32, 1) 0%, rgba(32, 32, 32, 1) 90%, rgba(255, 255, 255, 0) 90%, rgba(255, 255, 255, 0) 100%);
+*/
+}
+
+.project-showcase {
+    height: 100%;
+    /* 	width: 100%;*/
+    /*    min-width: 300px;*/
+}
+
+
+/*
+div.survey{
+	display: flex;
+	flex-flow: column;
+}
+*/
+
+.survey before-after {
+    /*    height:100%;*/
+}
+
+
+/* MOBILE VIEW ------------------------------------------------------------------- */
+
+.survey .bubble {
+    transform: translate(8px, -25px);
+}
+
+.survey .bubble-2 {
+    transform: translate(76px, 75px);
+}
+    section.survey {
+        padding-bottom: 90px;
+    }
+@media (max-width: 620px) {
+    .survey .description-1 {
+        margin-top: 0;
+    }
+}
+
+
+/* TABLET VIEW ------------------------------------------------------------------- */
+
+@media (min-width: 620px) {
+    .survey .bubble-2 {
+        transform: translate(46px, 15px);
+    }
+}
+
+@media (min-width: 620px) and (max-width: 768px) {
+    .survey .before-image,
+    .survey .after-image {
+        margin-top: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .survey .description-2 {
+        margin-top: 30px;
+    }
+}
+
+
+/* DESKTOP VIEW ------------------------------------------------------------------- */
+
+@media (min-width: 768px) {
+    .survey .bubble {
+        width: 180px;
+        height: 180px;
+        border-radius: 90px;
+    }
+    section.survey {
+        padding-bottom: 110px;
+    }
+}
+
+@media (min-width: 992px) {
+    .survey .bubble {
+        width: 200px;
+        height: 200px;
+        border-radius: 100px;
+    }
+}
