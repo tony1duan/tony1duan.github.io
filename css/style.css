@@ -9,6 +9,7 @@ body {
 
 body {
     font-family: "Nunito Sans", sans-serif;
+    min-width: 320px;
 }
 
 h1,
@@ -129,7 +130,6 @@ em {
     color: #333;
 }
 
-
 .gray-555 {
     color: #555;
 }
@@ -145,13 +145,14 @@ ul {
 }
 
 a {
-    color: white;
+    color: #FFCD05;
     text-decoration: none;
     color: inherit;
 }
 
 a:hover {
     text-decoration: none;
+    color: white;
 }
 
 a:active {
@@ -368,6 +369,9 @@ a:focus {
     margin-right: auto;
     margin-left: auto;
     position: relative;
+    /*   to reset the bootstrap setting */
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .container:before,
@@ -453,7 +457,7 @@ div.center {
 }
 
 .header-background {
-/*    background-color: transparent;*/
+    /*    background-color: transparent;*/
 }
 
 .homepage .black-background-40 {
@@ -582,6 +586,10 @@ img.site-logo {
     background-image: url(../img/waina-trading-background-2x.jpg);
 }
 
+footer {
+    border-top: #333 solid 0.5px;
+}
+
 footer img {
     height: 70px;
 }
@@ -637,9 +645,8 @@ footer .right-half {
         font-size: 18px;
     }
     .header-background {
-/*        background: url('../img/header-background-2x.jpg');*/
+        /*        background: url('../img/header-background-2x.jpg');*/
     }
-    
     img.site-logo {
         height: 190px;
     }
@@ -877,23 +884,21 @@ footer .right-half {
 .header-background {
     background-size: cover;
     background-position: center center;
-    background-attachment:fixed;
+    background-attachment: fixed;
     min-height: 100vh;
     z-index: -100;
 }
 
 .navbar .scheme-background {
-/*    background: rgba(172, 77, 157, 0.55)*/
+    /*    background: rgba(172, 77, 157, 0.55)*/
 }
+
 .scheme-background {
     -webkit-backdrop-filter: saturate(180%) contrast(180%) brightness(180%) blur(5px);
     backdrop-filter: saturate(180%) contrast(180%) brightness(180%) blur(5px);
     background-color: rgba(172, 77, 157, 0.55);
-    
-/*    background: rgba(172, 77, 157, 0.55)*/
+    /*    background: rgba(172, 77, 157, 0.55)*/
 }
-
-
 
 .navbar .navmenu.mobile {}
 
@@ -947,17 +952,20 @@ footer .right-half {
     color: #AC4D9D;
 }
 
+
 /*.main-content,*/
+
 .margin-20 {
     margin: 20px;
 }
+
 .padding-20 {
-    padding:20px;
+    padding: 20px;
 }
 
 .intro-text h1 {
-    margin-left:0;
-    margin-top:0;
+    margin-left: 0;
+    margin-top: 0;
 }
 
 .intro-text {
@@ -1004,6 +1012,7 @@ footer .right-half a:hover {
 
 .project-item p {
     text-align: left;
+    padding-bottom: 0;
 }
 
 
@@ -1141,6 +1150,14 @@ footer .right-half a:hover {
     margin-right: auto;
 }
 
+.btn {
+    border-radius: 0;
+}
+
+.email-form-link a:hover {
+    color: white;
+}
+
 .class123-label {
     color: white;
     font-family: "Nunito Sans", sans-serif;
@@ -1198,7 +1215,7 @@ footer .right-half a:hover {
 
 .contact-me {
     color: white;
-/*    background-color: rgba(172, 77, 157, .55);*/
+    /*    background-color: rgba(172, 77, 157, .55);*/
     text-align: center;
     padding: 2.6em 15px;
 }
@@ -1215,7 +1232,7 @@ footer .right-half a:hover {
 
 .contact-me p {
     position: relative;
-    top:.3em;
+    top: .3em;
 }
 
 @media (min-width:768px) {
@@ -1233,7 +1250,7 @@ footer .right-half a:hover {
     }
     .contact-me h1 {
         position: relative;
-        right:1em;
+        right: 1em;
     }
 }
 
@@ -1241,7 +1258,7 @@ footer .right-half a:hover {
 /*STAT CHANGE ----------------------------------------------------------------*/
 
 .active-nav {
-/*    color: #FFCD05;*/
+    /*    color: #FFCD05;*/
     border-bottom: 5px #FFCD05 solid;
     padding-bottom: 6px;
 }
