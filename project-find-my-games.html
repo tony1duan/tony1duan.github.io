@@ -13,9 +13,8 @@
 
     <script type="text/javascript" src="js/navbar.js"></script>
 
-    <!-- Latest compiled and minified JavaScript -->
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous"> -->
-    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script> -->
+    <!-- Bootstrap Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,700" rel="stylesheet">
@@ -40,7 +39,8 @@
 <body class="find-my-games">
     <nav class="navbar-shrunk gray-background-blur">
         <div class="container">
-            <a href="index.html" class=""><img class="site-logo-small" src="img/tony-duan-logo-small.png" /></a>
+            <a href="index.html" class="desktop"><img class="site-logo-small" src="img/tony-duan-logo-small.png" /></a>
+            <a href="index.html" class="mobile"><img class="site-logo-small" src="img/tony-duan-logo-small.png" alt="Homepage" /></a>
             <ul class="navbar-arrows hide">
                 <li>
                     <a href="contact.html">
@@ -53,19 +53,21 @@
                     </a>
                 </li>
             </ul>
-            <ul class="navmenu-shrunk">
+            <!--                hidden in desktop view-->
+            <ul class="navmenu-shrunk mobile">
+                <li><a class="home" href="index.html"><span class="glyphicon glyphicon-home navmenu-icon"> </span></a></li>
+                <li><a class="project-link active-nav" href="index.html#projects"><span class="glyphicon glyphicon-th-list navmenu-icon"></span></a>
+                </li>
+                <li><a href="about-me.html"><span class="glyphicon glyphicon-info-sign navmenu-icon"></span></a></li>
+                <li><a href="contact.html"><span class="glyphicon glyphicon-envelope navmenu-icon"></span></a></li>
+            </ul>
+            <!--                hidden in mobile view-->
+            <ul class="navmenu-shrunk desktop">
                 <li><a class="home" href="index.html">home</a></li>
-                <li><a class="active-nav project-link underline" href="index.html#projects">projects</a></li>
+                <li><a class="active-nav project-link" href="index.html#projects">projects</a></li>
                 <li><a href="about-me.html">about me</a></li>
                 <li><a href="contact.html">contact</a></li>
             </ul>
-            <div class="ham-container"><a class="ham" href="javascript:void(0);">&#9776;</a></div>
-        </div>
-        <div class="collapsed-items gray-background-blur" style="display: none;">
-            <li><a class="home" href="index.html">home</a></li>
-            <li><a class="active-nav project-link" href="index.html#projects">projects</a></li>
-            <li><a href="about-me.html">about me</a></li>
-            <li><a href="contact.html">contact</a></li>
         </div>
     </nav>
     <header class="gray-background">
@@ -273,7 +275,7 @@
                 <a href="img/project-find-my-games/app-showcase-9.jpg"><img class="full-width" src="img/project-find-my-games/app-showcase-3.jpg"></a>
             </div>
         </div>
-        <div class="contact-me margin-top-l">
+        <div class="contact-me margin-top-l scheme-background">
             <div class="container">
                 <p class="one-half extra-large-text">Interested in working together?</p>
                 <h1 class="one-half"><a href="contact.html">Contact me here</a></h1>
@@ -283,7 +285,7 @@
     <section class="nav-ribbon gray-background">
         <div class="container">
             <div class="one-half center-text">
-                <div class="nav-direction">Previous: <a href="/project-generic-paper.html" class="nav-destination" id="des-genericpaper">generic paper</a></div>
+                <div class="nav-direction">Previous: <a href="project-generic-paper.html" class="nav-destination" id="des-genericpaper">generic paper</a></div>
             </div>
             <div class="one-half center-text">
                 <div class="nav-direction">Next: <a href="project-blocbox.html" class="nav-destination" id="des-blocbox">Blocbox</a></div>

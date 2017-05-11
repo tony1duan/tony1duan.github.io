@@ -129,13 +129,11 @@ em {
     color: #333;
 }
 
-<<<<<<< HEAD
+
 .gray-555 {
     color: #555;
 }
 
-=======
->>>>>>> origin/finished-build
 .prototype-link:hover {
     color: #FFCD05;
 }
@@ -184,9 +182,9 @@ a:focus {
 }
 
 .gray-background-blur-2 {
-    -webkit-backdrop-filter: saturate(180%) contrast(180%) brightness(180%) blur(5px);
-    backdrop-filter: saturate(180%) contrast(180%) brightness(180%) blur(5px);
-    background-color: rgba(15, 15, 15, 0.3);
+    -webkit-backdrop-filter: saturate(100%) contrast(100%) brightness(180%) blur(10px);
+    backdrop-filter: saturate(100%) contrast(100%) brightness(180%) blur(10px);
+    background-color: rgba(15, 15, 15, 0.85);
 }
 
 .underline {
@@ -314,7 +312,7 @@ a:focus {
     display: inline;
 }
 
-.navmenu-shrunk .navmenu-background {
+.navmenu-shrunk .navmenu-box {
     padding: 0;
 }
 
@@ -455,7 +453,7 @@ div.center {
 }
 
 .header-background {
-    background-color: transparent;
+/*    background-color: transparent;*/
 }
 
 .homepage .black-background-40 {
@@ -491,7 +489,7 @@ img.site-logo {
     margin: 0px;
 }
 
-.navbar .navmenu-background {
+.navbar .navmenu-box {
     padding-top: 15px;
     padding-bottom: 15px;
 }
@@ -639,7 +637,7 @@ footer .right-half {
         font-size: 18px;
     }
     .header-background {
-        background: url('../img/header-background-2x.jpg');
+/*        background: url('../img/header-background-2x.jpg');*/
     }
     
     img.site-logo {
@@ -738,7 +736,7 @@ footer .right-half {
     .navmenu-shrunk {
         /*        display: inline;*/
     }
-    .navmenu-background {
+    .navmenu-box {
         padding: 0;
         /*    to reset the padding from 15px in mobile view, so the background can line up with the grid*/
     }
@@ -879,13 +877,23 @@ footer .right-half {
 .header-background {
     background-size: cover;
     background-position: center center;
+    background-attachment:fixed;
     min-height: 100vh;
     z-index: -100;
 }
 
-.navbar .navmenu-background {
-    background: rgba(172, 77, 157, 0.55)
+.navbar .scheme-background {
+/*    background: rgba(172, 77, 157, 0.55)*/
 }
+.scheme-background {
+    -webkit-backdrop-filter: saturate(180%) contrast(180%) brightness(180%) blur(5px);
+    backdrop-filter: saturate(180%) contrast(180%) brightness(180%) blur(5px);
+    background-color: rgba(172, 77, 157, 0.55);
+    
+/*    background: rgba(172, 77, 157, 0.55)*/
+}
+
+
 
 .navbar .navmenu.mobile {}
 
@@ -905,8 +913,9 @@ footer .right-half {
 }
 
 .navmenu a:hover {
+    color: #FFCD05;
     border-bottom: 5px #FFCD05 solid;
-    padding-bottom: 3px;
+    padding-bottom: 6px;
 }
 
 .navmenu-collapsed a {
@@ -938,13 +947,17 @@ footer .right-half {
     color: #AC4D9D;
 }
 
-.main-content,
+/*.main-content,*/
 .margin-20 {
     margin: 20px;
+}
+.padding-20 {
+    padding:20px;
 }
 
 .intro-text h1 {
     margin-left:0;
+    margin-top:0;
 }
 
 .intro-text {
@@ -953,8 +966,6 @@ footer .right-half {
 
 @media (max-width:768px) {
     .intro-text {
-        position: relative;
-        /*        top: 50px;*/
         padding-bottom: 0;
     }
 }
@@ -1187,7 +1198,7 @@ footer .right-half a:hover {
 
 .contact-me {
     color: white;
-    background-color: rgba(172, 77, 157, .55);
+/*    background-color: rgba(172, 77, 157, .55);*/
     text-align: center;
     padding: 2.6em 15px;
 }
@@ -1230,7 +1241,7 @@ footer .right-half a:hover {
 /*STAT CHANGE ----------------------------------------------------------------*/
 
 .active-nav {
-    color: #FFCD05;
+/*    color: #FFCD05;*/
     border-bottom: 5px #FFCD05 solid;
     padding-bottom: 6px;
 }
