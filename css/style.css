@@ -129,10 +129,13 @@ em {
     color: #333;
 }
 
+<<<<<<< HEAD
 .gray-555 {
     color: #555;
 }
 
+=======
+>>>>>>> origin/finished-build
 .prototype-link:hover {
     color: #FFCD05;
 }
@@ -638,6 +641,7 @@ footer .right-half {
     .header-background {
         background: url('../img/header-background-2x.jpg');
     }
+    
     img.site-logo {
         height: 190px;
     }
