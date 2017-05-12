@@ -4,7 +4,7 @@
 
 html,
 body {
-    overflow-x: hiden;
+    overflow-x: hidden;
 }
 
 body {
@@ -222,13 +222,13 @@ a:focus {
 }
 
 .margin-l-r {
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .padding-l-r {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .navbar-shrunk {
@@ -370,8 +370,8 @@ a:focus {
     margin-left: auto;
     position: relative;
     /*   to reset the bootstrap setting */
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .container:before,
@@ -468,6 +468,7 @@ img.site-logo {
     height: 130px;
     position: relative;
     padding: 32px 20px;
+    margin:10px 0;
     border-right: 1px solid #353535;
 }
 
@@ -647,9 +648,6 @@ footer .right-half {
     .header-background {
         /*        background: url('../img/header-background-2x.jpg');*/
     }
-    img.site-logo {
-        height: 190px;
-    }
     footer {
         font-size: 24px;
     }
@@ -690,13 +688,17 @@ footer .right-half {
     .padding-bottom-s {
         padding-bottom: 15px;
     }
+    p.standard-text {
+        padding-left: 7.5px;
+        padding-right: 7.5px;
+    }
     .margin-l-r {
-        margin-left: 15px;
-        margin-right: 15px;
+        margin-left: 7.5px;
+        margin-right: 7.5px;
     }
     .padding-l-r {
-        padding-left: 15px;
-        padding-right: 15px;
+        padding-left: 7.5px;
+        padding-right: 7.5px;
     }
     .more-projects {
         font-size: 32px;
@@ -727,6 +729,11 @@ footer .right-half {
     .right-half {
         width: 66.6667%;
     }
+    img.site-logo {
+        height: 185px;
+        border-right: 0px;
+        margin:0;
+    }
     .social-handle-mobile {
         display: none;
     }
@@ -737,7 +744,7 @@ footer .right-half {
         display: block;
     }
     .navmenu {
-        margin-bottom: 20px;
+        margin-bottom: 5px;
         /*    0px in mobile view; margin-left is defined in mobile view */
     }
     .navmenu-shrunk {
@@ -844,6 +851,9 @@ footer .right-half {
     /*    div.site-logo{
         height:150px;
     }*/
+    .navmenu {
+        margin-bottom:0;
+    }
     .navmenu a {
         font-size: 32px;
     }
@@ -886,6 +896,7 @@ footer .right-half {
     background-position: center center;
     background-attachment: fixed;
     min-height: 100vh;
+    max-height: 200vh;
     z-index: -100;
 }
 
@@ -975,6 +986,7 @@ footer .right-half {
 @media (max-width:768px) {
     .intro-text {
         padding-bottom: 0;
+        margin-bottom:10px
     }
 }
 
@@ -982,13 +994,13 @@ footer .right-half {
 /* FOOTER ------------------------------------------------------------------------*/
 
 footer {
-    height: 150px;
+    height: auto;
     font-family: "futura-pt", sans-serif;
     color: white;
 }
 
 footer .container {
-    height: 100%;
+    height: 130px;
 }
 
 footer .left-half a {
@@ -1227,25 +1239,32 @@ footer .right-half a:hover {
 .contact-me h1,
 .contact-me p {
     margin: 0;
-    padding: 0;
+    padding: 0em;
 }
 
 .contact-me p {
     position: relative;
-    top: .3em;
+    /*    top: .3em;*/
+}
+
+@media (max-width:992px) {
+    .contact-notification .left-half,
+    .contact-notification .right-half {
+        width: 100%;
+    }
 }
 
 @media (min-width:768px) {
     .contact-me p {
         position: relative;
-        top: 0.8em;
-        left: 2em;
+        /*        top: 0.6em;*/
+        left: 0em;
     }
 }
 
 @media (min-width: 992px) {
     .contact-me p {
-        top: .7em;
+        top: .5em;
         left: 2em;
     }
     .contact-me h1 {

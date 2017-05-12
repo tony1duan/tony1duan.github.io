@@ -12,6 +12,12 @@
     z-index: 1;
 }
 
+@media (max-width:620px) {
+    .header-bg-bottom {
+        height: 60px;
+    }
+}
+
 .project-showcase {
     position: relative;
     z-index: 2;
@@ -98,9 +104,12 @@ p.expectations {
     /*    width: 320px;*/
 }
 
-.persona {
-    /*    margin: 0 10px;*/
-    /*    height: 100%;*/
+@media (min-width: 768px) {
+    .persona {
+        /*    margin: 0 10px;*/
+            height: 100%;
+    }
+    
 }
 
 .persona-image {
@@ -109,8 +118,8 @@ p.expectations {
 
 @media (min-width: 620px) {
     .persona-spacing {
-        padding-right: 5px;
-        padding-left: 5px;
+/*        padding-right: 5px;*/
+/*        padding-left: 5px;*/
     }
     .persona-container {
         width: 100%;
@@ -213,10 +222,12 @@ p.expectations {
 }
 
 @media (max-width: 768px) {
+/*
     .container {
         padding-left: 5px;
         padding-right: 5px;
     }
+*/
     .mobile-container {
         display: -webkit-flex;
         display: -moz-flex;
