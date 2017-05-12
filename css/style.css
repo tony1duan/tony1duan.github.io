@@ -485,6 +485,9 @@ img.site-logo {
     position: relative;
     margin: 20px;
 }
+header .social-handle-mobile {
+    bottom:20px;
+}
 
 .navbar {
     margin-bottom: 0;
