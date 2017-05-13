@@ -35,10 +35,11 @@ h3 {
 h2 {
     font-size: 32px;
     font-weight: 700;
+    text-transform: lowercase;
 }
 
 h3 {
-    font-size: 24px;
+    font-size: 26px;
     font-weight: 500;
     text-transform: uppercase;
     white-space: nowrap;
@@ -85,29 +86,29 @@ em {
 }
 
 .small-text {
-    font-size: 14px;
+    font-size: 15px;
     line-height: 1.4em;
     font-weight: 200;
     color: #888;
 }
 
 .standard-text {
-    font-size: 16px;
+    font-size: 17px;
     line-height: 1.5em;
     font-weight: 200;
     color: #666;
 }
 
 .large-text {
-    font-size: 18px;
+    font-size: 19px;
     line-height: 1.4em;
-    font-weight: 200;
+    font-weight: 300;
 }
 
 .extra-large-text {
-    font-size: 18px;
+    font-size: 19px;
     line-height: 33px;
-    font-weight: 200;
+    font-weight: 300;
 }
 
 .more-projects {
@@ -122,16 +123,20 @@ em {
     color: black;
 }
 
-.gray-bbb {
-    color: #bbb;
-}
-
 .gray-333 {
     color: #333;
 }
 
 .gray-555 {
     color: #555;
+}
+
+.gray-888 {
+    color: #888;
+}
+
+.gray-bbb {
+    color: #bbb;
 }
 
 .prototype-link:hover {
@@ -372,6 +377,7 @@ a:focus {
     /*   to reset the bootstrap setting */
     padding-left: 10px;
     padding-right: 10px;
+    min-width: 300px;
 }
 
 .container:before,
@@ -468,7 +474,7 @@ img.site-logo {
     height: 130px;
     position: relative;
     padding: 32px 20px;
-    margin:10px 0;
+    margin: 10px 0;
     border-right: 1px solid #353535;
 }
 
@@ -485,8 +491,9 @@ img.site-logo {
     position: relative;
     margin: 20px;
 }
+
 header .social-handle-mobile {
-    bottom:20px;
+    bottom: 20px;
 }
 
 .navbar {
@@ -663,9 +670,11 @@ footer .right-half {
     .mobile {
         display: none;
     }
-    h1,
-    h2 {
+    h1 {
         font-size: 50px;
+    }
+    h2 {
+        font-size: 40px;
     }
     h3 {
         font-size: 32px;
@@ -735,7 +744,7 @@ footer .right-half {
     img.site-logo {
         height: 185px;
         border-right: 0px;
-        margin:0;
+        margin: 0;
     }
     .social-handle-mobile {
         display: none;
@@ -855,7 +864,7 @@ footer .right-half {
         height:150px;
     }*/
     .navmenu {
-        margin-bottom:0;
+        margin-bottom: 0;
     }
     .navmenu a {
         font-size: 32px;
@@ -980,6 +989,7 @@ footer .right-half {
 .intro-text h1 {
     margin-left: 0;
     margin-top: 0;
+    font-size: 180%;
 }
 
 .intro-text {
@@ -989,7 +999,7 @@ footer .right-half {
 @media (max-width:768px) {
     .intro-text {
         padding-bottom: 0;
-        margin-bottom:10px
+        margin-bottom: 10px;
     }
 }
 
@@ -1139,8 +1149,13 @@ footer .right-half a:hover {
     background: url('../img/contact&bio-background-2x.jpg');
     background-size: cover;
     background-position: center center;
+    background-attachment: fixed;
     min-height: 100vh;
     z-index: -100;
+}
+
+.about-me-box {
+    margin-bottom: 20px;
 }
 
 
@@ -1242,7 +1257,7 @@ footer .right-half a:hover {
 .contact-me h1,
 .contact-me p {
     margin: 0;
-    padding: 0em;
+    padding: .15em;
 }
 
 .contact-me p {
@@ -1261,18 +1276,18 @@ footer .right-half a:hover {
     .contact-me p {
         position: relative;
         /*        top: 0.6em;*/
-        left: 0em;
+        /*        left: 0em;*/
     }
 }
 
 @media (min-width: 992px) {
     .contact-me p {
-        top: .5em;
-        left: 2em;
+        /*        top: .5em;*/
+        /*        left: 2em;*/
     }
     .contact-me h1 {
         position: relative;
-        right: 1em;
+        /*        right: 1em;*/
     }
 }
 
@@ -1311,15 +1326,15 @@ footer .right-half a:hover {
 }
 */
 
-.my-game-bg {
+.find-my-games-bg {
     background: #AB1E1E;
 }
 
-#des-my-game {
+.find-my-games-color {
     color: #AB1E1E;
 }
 
-#des-blocbox {
+.blocbox-color {
     color: #8BBDE5;
 }
 
@@ -1327,7 +1342,7 @@ footer .right-half a:hover {
     background: #8BBDE5;
 }
 
-#des-genericpaper {
+.generic-paper-color {
     color: #48C2C5;
 }
 
