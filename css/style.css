@@ -168,7 +168,9 @@ a:visited,
 a:focus {
     text-decoration: none;
 }
-
+.background-dfdfdf {
+    background-color: #dfdfdf;
+}
 .gray-background {
     background-color: #0f0f0f;
 }
