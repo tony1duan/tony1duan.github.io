@@ -95,13 +95,13 @@ em {
 .standard-text {
     font-size: 17px;
     line-height: 1.5em;
-    font-weight: 200;
+    font-weight: 300;
     color: #666;
 }
 
 .large-text {
     font-size: 19px;
-    line-height: 1.4em;
+    line-height: 1.5em;
     font-weight: 300;
 }
 
@@ -843,16 +843,16 @@ footer .right-half {
         width: 960px;
     }
     .small-text {
-        font-size: 15px;
+        font-size: 16px;
     }
     .standard-text {
-        font-size: 18px;
+        font-size: 19px;
     }
     .large-text {
-        font-size: 20px;
+        font-size: 21px;
     }
     .extra-large-text {
-        font-size: 22px;
+        font-size: 23px;
     }
     .navbar {
         display: block;
