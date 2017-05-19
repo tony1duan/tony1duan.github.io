@@ -218,6 +218,10 @@ a:focus {
     margin-top: 10px;
 }
 
+.margin-bottom-s {
+    margin-bottom: 10px;
+}
+
 .padding-top-l {
     padding-top: 40px;
 }
@@ -1012,11 +1016,15 @@ footer .right-half {
 }
 
 .arrow-text {
+    /*    padding-top: 20px;*/
     padding-bottom: 0;
 }
 
 .arrow-down {
     padding: 0px 8px 5px;
+    position:relative;
+    bottom:5px;
+    /*    margin-bottom: 20px;*/
 }
 
 
@@ -1053,7 +1061,7 @@ footer .right-half a:hover {
 }
 
 .project-list-title {
-    margin-top:55px;
+    margin-top: 55px;
 }
 
 .project-item h2 {
