@@ -139,6 +139,10 @@ em {
     color: #bbb;
 }
 
+.gray-ddd {
+    color: #ddd;
+}
+
 .prototype-link:hover {
     color: #FFCD05;
 }
@@ -168,9 +172,11 @@ a:visited,
 a:focus {
     text-decoration: none;
 }
+
 .background-dfdfdf {
     background-color: #dfdfdf;
 }
+
 .gray-background {
     background-color: #0f0f0f;
 }
@@ -995,16 +1001,20 @@ footer .right-half {
 }
 
 .intro-text {
-    padding-bottom: 35px;
+    padding-bottom: 15px;
 }
 
 @media (max-width:768px) {
     .intro-text {
-        padding-bottom: 0;
+        padding-bottom: 15px;
         margin-bottom: 10px;
     }
 }
 
+.arrow-down {
+    width:80px;
+    opacity: .78;
+}
 
 /* FOOTER ------------------------------------------------------------------------*/
 
@@ -1032,7 +1042,10 @@ footer .right-half a:hover {
 
 
 /* PROJECTS ----------------------------------------------------------------------*/
-
+.nav-manu-place-holder {
+    width:100%;
+    height:70px;
+}
 .project-item h2 {
     position: relative;
 }
@@ -1040,70 +1053,6 @@ footer .right-half a:hover {
 .project-item p {
     text-align: left;
     padding-bottom: 0;
-}
-
-
-/*GENERIC PAPER*/
-
-.item-generic-paper:hover {
-    background-image: url(../img/generic-paper-background-2x.jpg);
-}
-
-.item-generic-paper h2 {
-    color: #48C2C5;
-}
-
-.item-generic-paper:hover>.container {
-    border-left: 5px solid #48C2C5;
-    border-right: 5px solid #48C2C5;
-}
-
-
-/*FIND MY GAMES*/
-
-.item-find-my-games:hover {
-    background-image: url(../img/find-my-games-background-2x.jpg);
-}
-
-.item-find-my-games h2 {
-    color: #AB1E1E;
-}
-
-.item-find-my-games:hover>.container {
-    border-left: 5px solid #AB1E1E;
-    border-right: 5px solid #AB1E1E;
-}
-
-
-/*BLOCBOX*/
-
-.item-blocbox:hover {
-    background-image: url(../img/blocbox-background-2x.jpg);
-}
-
-.item-blocbox h2 {
-    color: #8BBDE5;
-}
-
-.item-blocbox:hover>.container {
-    border-left: 5px solid #8BBDE5;
-    border-right: 5px solid #8BBDE5;
-}
-
-
-/*WAINA TRADING*/
-
-.item-waina-trading:hover {
-    background-image: url(../img/waina-trading-background-2x.jpg);
-}
-
-.item-waina-trading h2 {
-    color: #693F89;
-}
-
-.item-waina-trading:hover>.container {
-    border-left: 5px solid #693F89;
-    border-right: 5px solid #693F89;
 }
 
 .project-item {
@@ -1123,11 +1072,82 @@ footer .right-half a:hover {
 }
 
 .project-item>.container {
-    background: rgba(0, 0, 0, .8);
+    /*    background: rgba(0, 0, 0, .8);*/
     box-sizing: content-box;
     padding-top: 35px;
     padding-bottom: 35px;
+    min-height: 180px;
 }
+
+/*GENERIC PAPER*/
+
+.item-generic-paper:hover {
+    background-image: url(../img/generic-paper-background-2x.jpg);
+}
+
+.item-generic-paper h2 {
+    /*    color: #48C2C5;*/
+}
+.project-item:hover>.container {
+    border-left: 5px solid white;
+    border-right: 5px solid white;
+}
+/*
+.item-generic-paper:hover>.container {
+    border-left: 5px solid #48C2C5;
+    border-right: 5px solid #48C2C5;
+}
+*/
+
+
+/*FIND MY GAMES*/
+
+.item-find-my-games:hover {
+    background-image: url(../img/find-my-games-background-2x.jpg);
+}
+
+.item-find-my-games h2 {
+/*    color: #AB1E1E;*/
+}
+
+.item-find-my-games:hover>.container {
+    border-left: 5px solid white;
+    border-right: 5px solid white;
+}
+
+
+/*BLOCBOX*/
+
+.item-blocbox:hover {
+    background-image: url(../img/blocbox-background-2x.jpg);
+}
+
+.item-blocbox h2 {
+/*    color: #8BBDE5;*/
+}
+
+.item-blocbox:hover>.container {
+    border-left: 5px solid white;
+    border-right: 5px solid white;
+}
+
+
+/*WAINA TRADING*/
+
+.item-waina-trading:hover {
+    background-image: url(../img/waina-trading-background-2x.jpg);
+}
+
+.item-waina-trading h2 {
+    color: #693F89;
+}
+
+.item-waina-trading:hover>.container {
+    border-left: 5px solid #693F89;
+    border-right: 5px solid #693F89;
+}
+
+
 
 .more-projects {
     height: 100px;
@@ -1161,8 +1181,8 @@ footer .right-half a:hover {
 }
 
 .profile-image {
-    width:300px;
-    height:300px;
+    width: 300px;
+    height: 300px;
 }
 
 
@@ -1334,19 +1354,26 @@ footer .right-half a:hover {
 */
 
 .find-my-games-bg {
-    background: #AB1E1E;
+    -webkit-backdrop-filter: saturate(180%) contrast(280%) brightness(70%) blur(20px);
+    background: rgba(171, 30, 30, 0.85);
 }
 
 .find-my-games-color {
     color: #AB1E1E;
 }
 
+.blocbox-bg {
+    -webkit-backdrop-filter: saturate(180%) contrast(280%) brightness(70%) blur(20px);
+    background: rgba(139, 189, 229, 0.85);
+}
+
 .blocbox-color {
     color: #8BBDE5;
 }
 
-.blocbox-bg {
-    background: #8BBDE5;
+.generic-paper-bg {
+    -webkit-backdrop-filter: saturate(180%) contrast(280%) brightness(70%) blur(20px);
+    background: rgba(72, 194, 197, 0.85);
 }
 
 .generic-paper-color {
