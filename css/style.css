@@ -1011,10 +1011,14 @@ footer .right-half {
     }
 }
 
-.arrow-down {
-    width:80px;
-    opacity: .78;
+.arrow-text {
+    padding-bottom: 0;
 }
+
+.arrow-down {
+    padding: 0px 8px 5px;
+}
+
 
 /* FOOTER ------------------------------------------------------------------------*/
 
@@ -1042,10 +1046,12 @@ footer .right-half a:hover {
 
 
 /* PROJECTS ----------------------------------------------------------------------*/
+
 .nav-manu-place-holder {
-    width:100%;
-    height:70px;
+    width: 100%;
+    height: 70px;
 }
+
 .project-item h2 {
     position: relative;
 }
@@ -1079,6 +1085,7 @@ footer .right-half a:hover {
     min-height: 180px;
 }
 
+
 /*GENERIC PAPER*/
 
 .item-generic-paper:hover {
@@ -1088,10 +1095,13 @@ footer .right-half a:hover {
 .item-generic-paper h2 {
     /*    color: #48C2C5;*/
 }
+
 .project-item:hover>.container {
     border-left: 5px solid white;
     border-right: 5px solid white;
 }
+
+
 /*
 .item-generic-paper:hover>.container {
     border-left: 5px solid #48C2C5;
@@ -1107,7 +1117,7 @@ footer .right-half a:hover {
 }
 
 .item-find-my-games h2 {
-/*    color: #AB1E1E;*/
+    /*    color: #AB1E1E;*/
 }
 
 .item-find-my-games:hover>.container {
@@ -1123,7 +1133,7 @@ footer .right-half a:hover {
 }
 
 .item-blocbox h2 {
-/*    color: #8BBDE5;*/
+    /*    color: #8BBDE5;*/
 }
 
 .item-blocbox:hover>.container {
@@ -1146,8 +1156,6 @@ footer .right-half a:hover {
     border-left: 5px solid #693F89;
     border-right: 5px solid #693F89;
 }
-
-
 
 .more-projects {
     height: 100px;
