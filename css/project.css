@@ -272,7 +272,8 @@ p.expectations {
         justify-content: center;
     }
     .mobile-vertical {
-        display: flex: -webkit-flex-flow: column nowrap;
+        display: flex;
+        -webkit-flex-flow: column nowrap;
         -moz-flex-flow: column nowrap;
         flex-flow: column nowrap;
         -ms-align-items: center;

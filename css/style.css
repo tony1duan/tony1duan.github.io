@@ -1022,9 +1022,30 @@ footer .right-half {
 
 .arrow-down {
     padding: 0px 8px 5px;
-    position:relative;
-    bottom:5px;
+    position: relative;
+    bottom: 5px;
     /*    margin-bottom: 20px;*/
+}
+
+.text-arrow-down {
+    margin-top:auto;
+/*    align-self:flex-end;*/
+}
+
+.display-flex {
+    display: flex;
+}
+
+.flex-vertical {
+    display: flex; 
+    -webkit-flex-flow: column nowrap;
+    -moz-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+/*
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+*/
 }
 
 
